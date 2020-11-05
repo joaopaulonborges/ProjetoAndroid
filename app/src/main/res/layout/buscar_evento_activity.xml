@@ -1,0 +1,171 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="fragment.BuscarEventoFragment">
+
+        <TextView
+            android:id="@+id/textViewTituloEventos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/tituloBuscarEvento"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTituloTipoEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/tituloTipoEventoBuscar"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTituloEventos" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTipoEventoBuscar"
+            android:layout_width="271dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textViewTituloTipoEvento"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTituloTipoEvento">
+
+            <RadioButton
+                android:id="@+id/radioButtonTipo1Buscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_evento_1" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTipo2Buscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_evento_2" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTipo3Buscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_evento_3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewCriarCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tituloCidadeEventoBuscar"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/radioGroupTipoEventoBuscar"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupTipoEventoBuscar" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="@+id/textViewCriarCidade"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCriarCidade">
+
+            <RadioButton
+                android:id="@+id/radioButtonCidadeAtual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonCidadeAtual" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOutraCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radioButtonOutraCidade" />
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinnerEstado"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/ESTADOS"
+            app:layout_constraintStart_toEndOf="@+id/radioGroupCidade"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCriarCidade" />
+
+        <Spinner
+            android:id="@+id/spinnerMunicipio"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/AC"
+            app:layout_constraintStart_toEndOf="@+id/radioGroupCidade"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerEstado" />
+
+        <TextView
+            android:id="@+id/textViewCriarHoraEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tituloDataEventoBuscar"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/radioGroupCidade"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupCidade" />
+
+        <CalendarView
+            android:id="@+id/calendarViewDataEventoBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCriarHoraEvento" />
+
+        <Button
+            android:id="@+id/buttonVoltarBuscarEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/botao"
+            android:text="@string/buttonVoltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBuscar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarViewDataEventoBuscar" />
+
+        <Button
+            android:id="@+id/buttonBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/botao"
+            android:text="@string/buttonBuscarEvento"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonVoltarBuscarEvento"
+            app:layout_constraintTop_toBottomOf="@+id/calendarViewDataEventoBuscar" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

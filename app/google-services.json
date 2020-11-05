@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1028252156653",
+    "firebase_url": "https://melhor-evento.firebaseio.com",
+    "project_id": "melhor-evento",
+    "storage_bucket": "melhor-evento.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028252156653:android:2a793af4302310ab",
+        "android_client_info": {
+          "package_name": "com.app.melhorevento"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028252156653-i224l2ibg0va8vvglus7sjkd21r8co15.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.melhorevento",
+            "certificate_hash": "21e74cb44ac182a452089201378a6e2f2e5b1e4a"
+          }
+        },
+        {
+          "client_id": "1028252156653-ilu4ip28onelgpm6tluul5qalvetr39k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFeVIl_mr8xxpG72ntWJt6vAAsBXeEFJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028252156653-ilu4ip28onelgpm6tluul5qalvetr39k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

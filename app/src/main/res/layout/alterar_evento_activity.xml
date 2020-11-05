@@ -1,0 +1,272 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="fragment.BuscarEventoFragment">
+
+        <TextView
+            android:id="@+id/textViewTituloEventos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/tituloAlterarEvento"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNomeEventoAlterar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/nomeEvento"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTituloEventos" />
+
+        <EditText
+            android:id="@+id/editTextDescricaoEventoAlterar"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:gravity="fill_horizontal"
+            android:hint="@string/descricaoEvento"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@+id/editTextNomeEventoAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeEventoAlterar" />
+
+        <EditText
+            android:id="@+id/editTextLogradouroEventoAlterar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/enderecoEventoLogradouro"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextDescricaoEventoAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDescricaoEventoAlterar" />
+
+        <EditText
+            android:id="@+id/editTextNumeroEventoAlterar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/enderecoEventoNumero"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/editTextLogradouroEventoAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLogradouroEventoAlterar" />
+
+        <EditText
+            android:id="@+id/editTextBairroEventoAlterar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/enderecoEventoBairro"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editTextNumeroEventoAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumeroEventoAlterar" />
+
+        <TextView
+            android:id="@+id/textViewTituloTipoEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tituloTipoEventoAlterar"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/editTextBairroEventoAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/editTextBairroEventoAlterar" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTipoEventoAlterar"
+            android:layout_width="271dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textViewTituloTipoEvento"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTituloTipoEvento">
+
+            <RadioButton
+                android:id="@+id/radioButtonTipo1Alterar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_evento_1" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTipo2Alterar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_evento_2" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTipo3Alterar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_evento_3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewAlterarCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tituloCidadeEventoAlterar"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/radioGroupTipoEventoAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupTipoEventoAlterar" />
+
+        <Spinner
+            android:id="@+id/spinnerEstadoAlterar"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/ESTADOS"
+            app:layout_constraintStart_toStartOf="@+id/textViewAlterarCidade"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAlterarCidade" />
+
+        <Spinner
+            android:id="@+id/spinnerMunicipioAlterar"
+            android:layout_width="230dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/AC"
+            app:layout_constraintStart_toStartOf="@+id/spinnerEstadoAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerEstadoAlterar" />
+
+        <Spinner
+            android:id="@+id/spinnerHoraAlterar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/HORAS"
+            app:layout_constraintStart_toStartOf="@+id/textViewAlterarHoraEventoSubtitulo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAlterarHoraEventoSubtitulo" />
+
+        <Spinner
+            android:id="@+id/spinnerMinutosAlterar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/MINUTOS"
+            app:layout_constraintStart_toEndOf="@+id/spinnerHoraAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAlterarMinutosEventoSubtitulo" />
+
+        <TextView
+            android:id="@+id/textViewAlterarHoraEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tituloHoraEventoCriar"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/spinnerMunicipioAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerMunicipioAlterar" />
+
+        <TextView
+            android:id="@+id/textViewAlterarHoraEventoSubtitulo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/subtituloHoraEventoCriar"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textViewAlterarHoraEvento"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAlterarHoraEvento" />
+
+        <TextView
+            android:id="@+id/textViewAlterarMinutosEventoSubtitulo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/subtituloMinutosEventoCriar"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textViewAlterarHoraEventoSubtitulo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAlterarHoraEvento" />
+
+        <TextView
+            android:id="@+id/textViewAlterarDataEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tituloDataEventoBuscar"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/spinnerHoraAlterar"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerHoraAlterar" />
+
+        <CalendarView
+            android:id="@+id/calendarViewDataEventoAlterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAlterarDataEvento" />
+
+        <Button
+            android:id="@+id/buttonImagemEventoAlterar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/botao"
+            android:text="@string/buttonImagemEvento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarViewDataEventoAlterar" />
+
+        <TextView
+            android:id="@+id/textViewImagemEventoAlterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/textViewImagemEvento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonImagemEventoAlterar" />
+
+        <Button
+            android:id="@+id/buttonAlterarEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/botao"
+            android:text="@string/buttonAlterarEvento"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonAlteraEventoVoltar"
+            app:layout_constraintTop_toBottomOf="@+id/textViewImagemEventoAlterar" />
+
+        <Button
+            android:id="@+id/buttonAlteraEventoVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/botao"
+            android:text="@string/buttonVoltar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonAlterarEvento"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewImagemEventoAlterar" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

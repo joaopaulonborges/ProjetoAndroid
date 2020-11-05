@@ -1,0 +1,90 @@
+<resources>
+    <!--tela login-->
+    <string name="app_name">Melhor Evento</string>
+    <string name="editTextEmail">Digite seu e-mail</string>
+    <string name="editTextSenha">Digite sua senha</string>
+    <string name="textViewEsqueciASenha">Esqueci o e-mail / senha</string>
+    <!--tela cadastro usuário-->
+    <string name="cabecalhoCadastroPessoaFisica">Cadastro de Pessoa Física</string>
+    <string name="cabecalhoCadastroPessoaJuridica">Cadastro de Pessoa Jurídica</string>
+    <string name="editTextSenhaConfirmacao">Digite sua senha novamente</string>
+    <string name="buttonLogin">Logar</string>
+    <string name="buttonCadastrar">Cadastrar</string>
+    <string name="imageViewLogoDescricao">Logo do aplicativo</string>
+    <string name="tituloCadastroPessoaFisica">Cadastro de Pessoa Física</string>
+    <string name="tituloCadastroPessoaJuridica">Cadastro de Pessoa Jurídica</string>
+    <string name="textoCadastroPessoaFiscia">O cadastro de pessoa física permite ao usuário pesquisar por eventos de casas de shows, bares, restaurantes e lojas, de acordo com sua localização</string>
+    <string name="textoCadastroPessoaJuridica">O cadastro de pessoa jurídica permite ao usuário criar eventos para casas de shows, bares, restaurantes e lojas, além de poder pesquisar por eventos de casas de shows, bares, restaurantes e lojas de acordo com sua localização</string>
+    <string name="editTextNome">Digite seu nome</string>
+    <string name="editTextNomeEmpresa">Digite o nome da empresa</string>
+    <string name="editTextTelefone">Digite seu telefone</string>
+    <string name="editTextCpf">Digite seu CPF</string>
+    <string name="editTextCnpj">Digite seu CNPJ</string>
+    <string name="buttonVoltar">Voltar</string>
+    <string name="checkBoxAceitarTermos">Aceitar os termos de uso</string>
+    <!--tela buscar evento-->
+    <string name="cabecalhoBuscarEvento">Buscar Evento</string>
+    <string name="cabecalhoExibirEvento">Eventos Encontrados</string>
+    <string name="tituloBuscarEvento">Preencha os campos para buscar os eventos</string>
+    <string name="tituloTipoEventoBuscar">Selecione os tipos de evento que deseja procurar</string>
+    <string name="tituloCidadeEventoBuscar">Selecione a cidade para buscar os eventos</string>
+    <string name="tituloDataEventoBuscar">Selecione a data do evento</string>
+    <string name="radioButtonCidadeAtual">Cidade atual</string>
+    <string name="radioButtonOutraCidade">Outra cidade</string>
+    <string name="editTextOutraCidade">Digite a cidade</string>
+    <string name="buttonBuscarEvento">Buscar</string>
+    <string name="textViewEventoNaoEncontrado">Nenhum evento encontrado</string>
+    <!--tela criar evento-->
+    <string name="cabecalhoCriarEvento">Cadastro de Evento</string>
+    <string name="tituloCriarEvento">Preencha os campos para criar o evento</string>
+    <string name="tituloTipoEventoCriar">Selecione o tipo de evento que deseja criar</string>
+    <string name="tituloCidadeEventoCriar">Selecione a cidade para criar o evento</string>
+    <string name="tituloDataEventoCriar">Selecione a data do evento</string>
+    <string name="tituloHoraEventoCriar">Selecione a hora de início do evento</string>
+    <string name="subtituloHoraEventoCriar">Hora</string>
+    <string name="subtituloMinutosEventoCriar">Minutos</string>
+    <string name="nomeEvento">Digite o nome do evento</string>
+    <string name="descricaoEvento">Faça uma descrição do evento</string>
+    <string name="enderecoEventoLogradouro">Digite o logradouro do evento</string>
+    <string name="enderecoEventoNumero">Digite o número do logradouro</string>
+    <string name="enderecoEventoBairro">Digite o bairro do evento</string>
+    <string name="buttonCriarEvento">Criar</string>
+    <string name="buttonImagemEvento">Selecione uma imagem</string>
+    <string name="textViewImagemEvento">Nenhuma imagem selecionada</string>
+    <!--tela alterar evento-->
+    <string name="cabecalhoAlterarEvento">Alterar Evento</string>
+    <string name="cabecalhoAlterarEventoListagem">Meus eventos</string>
+    <string name="tituloAlterarEvento">Preencha os campos para alterar o evento</string>
+    <string name="tituloTipoEventoAlterar">Selecione o tipo de evento</string>
+    <string name="tituloCidadeEventoAlterar">Selecione a cidade do evento</string>
+    <string name="buttonAlterarEvento">Alterar</string>
+    <!--tela alterar dados-->
+    <string name="cabecalhoAlterarDados">Alterar Dados Cadastrais</string>
+    <string name="tituloAlterarDadosCadastrais">Preencha os campos para alterar os dados cadastrais</string>
+    <string name="buttonAlterarDadosCadastrais">Alterar</string>
+    <!--tela principal-->
+    <string name="textViewBemVindo">Bem-Vindo</string>
+    <string name="textViewMensagemPrincipal">Procure por lazer, diversão e promoções de forma simples e prática. O aplicativo Melhor Evento permite pesquisar por eventos em diferentes categorias. As buscar são separadas por tipo e por cidade</string>
+    <string name="logoEmpresa">Logo da empresa</string>
+    <string name="nomeEmpresa">Nome da empresa</string>
+    <!--menu-->
+    <string name="title_activity_principal">Melhor Evento</string>
+    <string name="navigation_drawer_open">Abrir abas de navegação</string>
+    <string name="navigation_drawer_close">Fechar abas de navegação</string>
+    <string name="nav_header_desc">Cabeçalho de navegação</string>
+    <!--abas do menu-->
+    <string name="menu_buscar_evento">Buscar Evento</string>
+    <string name="menu_cadastrar_eventos">Cadastrar Evento</string>
+    <string name="menu_alterar_dados">Alterar Dados</string>
+    <string name="menu_listar_eventos">Meus Eventos</string>
+    <string name="menu_sair">Sair</string>
+    <!--abas de configuração-->
+    <string name="cabecalhoSobre">Sobre</string>
+    <string name="menu_sobre">Sobre</string>
+    <!--tipos de envento-->
+    <string name="tipo_evento_1">Eventos e Shows</string>
+    <string name="tipo_evento_2">Bares, Lanchonetes e Restaurantes</string>
+    <string name="tipo_evento_3">Comércios e Lojas</string>
+    <!--exibir eventos-->
+    <string name="pesquisarEvento">Pesquisar</string>
+</resources>
